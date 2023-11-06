@@ -9,4 +9,4 @@ jobs:
   MavenBuild_usingTemplate:
     uses: deepnet4u/reusable_template/.github/workflows/ReusableTemplate.yml@main
     with:
-     file_path: src\dotnet-demoapp.csproj
+     file_path: pom.xml
