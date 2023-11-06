@@ -1,4 +1,4 @@
-name: Maven and SCA_SAST scan with DC and FindSecBug
+name: Maven and SCA_SAST_Secret scan with DC,  FindSecBug and GitLeaks using reUsable Templete
 
 on:
   push:
@@ -7,6 +7,6 @@ on:
     branches: [ "main" ]
 jobs:
   DotNet_MSBuild:
-    uses: sdpktest/reusable_template/.github/workflows/ReusableTemplate.yml@main
+    uses: deepnet4u/reusable_template/.github/workflows/ReusableTemplate.yml@main
     with:
      file_path: src\dotnet-demoapp.csproj
