@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
 jobs:
-  DotNet_MSBuild:
+  MavenBuild_usingTemplate:
     uses: deepnet4u/reusable_template/.github/workflows/ReusableTemplate.yml@main
     with:
      file_path: src\dotnet-demoapp.csproj
