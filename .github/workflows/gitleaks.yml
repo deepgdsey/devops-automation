@@ -1,4 +1,4 @@
-name: GitLeaks Scan
+name: GitLeaks Scan -1
 # testing sample DevOps with Git workflow
 on:
   push:
