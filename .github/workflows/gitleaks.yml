@@ -10,11 +10,15 @@ on:
 jobs:
   gitleaks:
     runs-on: ubuntu-latest
-
+    
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-
+    - name: Hello world action
+      with: # Set the secret as an input
+        super_secret: ${{ secrets.SuperSecret }}
+      env: # Or as an environment variable
+        super_secret: ${{ secrets.SuperSecret }}
     - name: Install GitLeaks
       run: |
         wget -q -O gitleaks.tar.gz https://github.com/gitleaks/gitleaks/releases/download/v8.18.0/gitleaks_8.18.0_linux_x64.tar.gz
